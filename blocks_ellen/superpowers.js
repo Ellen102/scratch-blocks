@@ -51,3 +51,66 @@ Blockly.Blocks['superpowers_jump'] = {
     });
   }
 };
+
+
+
+Blockly.Blocks['superpowers_fly_away'] = {
+		  /**
+		   * Block to jump.
+		   * @this Blockly.Block
+		   */
+		  init: function() {
+		    this.jsonInit({
+		      "message0": "fly away with speed %1",
+		      "args0": [
+		        {
+		          "type": "input_value",
+		          "name": "SPEED"
+		        }
+		      ],
+		      "category": Blockly.Categories.superpowers,
+		      "extensions": ["colours_motion", "shape_end"]
+		    });
+		  }
+		};
+
+
+Blockly.Blocks['superpowers_bat_signal'] = {
+		  /**
+		   * Block to jump.
+		   * @this Blockly.Block
+		   */
+		  init: function() {
+		    this.jsonInit({
+		      "message0": "when bat-signal is received",
+		      "args0": [
+
+		      ],
+		      "category": Blockly.Categories.superpowers,
+		      "extensions": ["colours_event", "shape_hat"]
+		    });
+		  }
+		};
+
+
+
+Blockly.Blocks['superpowers_while_awesome'] = {
+		  /**
+		   * Block for repeat until a condition becomes true.
+		   */
+		  init: function() {
+		    this.jsonInit({
+		      "message0": "while I am awesome",
+		      "message1": "%1",
+		      "lastDummyAlign2": "RIGHT",
+		      "args1": [
+		        {
+		          "type": "input_statement",
+		          "name": "SUBSTACK"
+		        }
+		      ],
+		      "category": Blockly.Categories.control,
+		      "extensions": ["colours_control", "shape_end"]
+		    });
+		  }
+		};
